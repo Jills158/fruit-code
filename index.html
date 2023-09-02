@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script> 
+    <title>Fruit Code Breaker</title>
+</head>
+<body>
+    <div id="help">
+        <h2>How to Play</h2>
+        <p>The computer has devised a secret code made up of four out a possible six fruits. </p>
+    
+        <p id="fruit">&#127819 &#127824 &#127817 &#127827 &#127820 &#127826</p>
+    
+        <p>There are no duplications within the code. Your objective is to guess the code within 10 tries.</p>
+    
+        <p>You make your choice using the dropdown arrows and then press the submit button. If your guess is incorrect, you will receive a score as follows:</p>
+    
+        <p>&#x26AB; means a fruit in the right place and &#x26AA; means a fruit in the wrong place </p>
+    
+        <p>(but still part of the code.) You get nothing for fruit that are not in the code.</p>
+        <br>
+        <p> Keep guessing until you get it right or run out of tries.
+        </p>
+        <button id="return">Return to Game</button>
+        <br><br>
+      </div>
+    
+      <div class="page">
+        <!-- the white page area -->
+        <button id="helpButton">How to play</button>
+        <!-- Title etc -->
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#127826&#127819 Fruit Code Breaker &#127819&#127826</h2>
+        <p>This game is based on the board game <span>Mastermind</span> which was invented in 1970 by Mordecai Meirowitz of Israel and was, itself, based on a paper-based game called Bulls and Cows.</p>
+        <br>
+        <div class="game">
+          <div class="innerGame">
+            <!-- a container for the game elements -->
+            <!-- Creating the dropdown elements -->
+            <div class="dropdown">
+              <!-- a container round the dropdown & submit -->
+              <div id="innerDropdown">
+                <!-- a container just round the dropdowns -->
+                <select id="first">
+                </select>
+                <select id="second">
+                </select>
+                <select id="third">
+                </select>
+                <select id="fourth">
+                </select>
+              </div> <!-- end inner dropdown -->
+    
+              <!-- Assigning the results -->
+              <input id="submitGuess" type="submit" value="Submit" onclick="sendCodeGuess()" />
+              <!-- the submit button-->
+            </div> <!-- end dropdown -->
+            <div id="message"></div> <!-- the message area -->
+    
+            <!-- Create a space to hold the guesses and the scores -->
+            <div class="container" id="container1">
+              <h3 id="guessHeader">Guess</h3>
+              <div id="outputGuess">
+              </div>
+            </div> <!-- container1 end -->
+    
+            <div class="container" id="container2">
+              <h3 id="scoreHeader">Score</h3>
+              <div id="outputScore">
+              </div>
+            </div><!-- container2 end -->
+          </div> <!-- end inner game -->
+        </div> <!-- end game -->
+      </div> <!-- end page -->   
+</body>
+</html>

@@ -1,0 +1,129 @@
+body{
+    font-size: 20px ;
+    font-family:Arial, sans-serif;
+    background-color:#e6eaeb;
+    display:flex;
+    justify-content: center;
+    color:#1a285e;
+    text-align:center;
+  }
+  
+  button, #submitGuess{
+    background-color:#1a285e;
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+    width:100%;
+    height:10%;
+    }
+  
+  button:hover, #submitGuess:hover {background-color:grey;
+    }
+  
+  #helpButton{
+    width:10%;
+    float:right;
+    margin:5px;
+  }
+  
+  #help {
+    position:absolute;
+    top:10;
+    left:10;
+    display:none;
+    width:50%;
+    background-color:white;
+    border:solid black 2px;
+    border-radius: 5px;  
+  }
+  
+  .page{
+    background-color:white;
+    width: 50%;
+    height:70%;
+    border: solid black 2px;
+    border-radius: 5px; 
+   }
+  
+  .game{
+    background-color:#cacecf;
+    display:flex;
+    justify-content:center;
+  }
+  
+  .innerGame{
+      width:60%;
+  }
+  
+  span{
+    color:#1a285e;
+    font-weight:bold;
+  }
+  
+  .dropdown{
+    margin-bottom:30px;
+    }
+  
+  #innerDropdown{
+     justify-content:center;
+  }
+  
+  .container{
+    background-color:#e6eaeb;
+    width:45%;
+    border-style:double;
+    border-width:5px;
+    border-radius: 5px;
+    height:800px;
+    font-size:25px;
+    
+  }
+  
+  #container1 {
+    float:left;
+  }
+  
+  #container2 {
+    float:right;
+    }
+  
+  #first,#second,#third,#fourth{
+   font-size: 30px ;
+   margin:5px;
+   border-radius:10px;
+    
+  }
+  
+  #fruit{
+    font-size:30px;
+  }      
+  
+  #scoreHeader{
+    text-align: left;
+    margin:5px; 
+  }  
+  
+  #outputScore{
+    text-align: left;
+    font-size:25px;
+    margin:5px;
+    color:red;
+    font-weight:bold 
+  }  
+  
+  #outputGuess, #guessHeader {
+   text-align: right;
+    margin:5px;
+  }
+  
+  #message{
+    position:relative;
+    top: -20px;
+    color:red;
+    font-weight:bold;
+    font-size:16px;
+    text-align:center;
+    margin:0px; 
+  }
+  
+  
